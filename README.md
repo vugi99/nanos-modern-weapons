@@ -1,2 +1,2 @@
-# nanos-modern-weapons
-The modern weapons package
+# modern-weapons
+## [Assets](https://github.com/vugi99/nanos-modern-weapons-assets)
