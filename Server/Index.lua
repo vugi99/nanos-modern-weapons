@@ -1334,7 +1334,6 @@ Package.Subscribe("Load", function()
         Package.Call(
             "sandbox",
             "AddSpawnMenuItem",
-            Package.GetPath(),
             "weapons",
 			k,
 			Package.GetPath(),
