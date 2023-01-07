@@ -1329,15 +1329,14 @@ ModernWeapons = {
 }
 
 Package.Subscribe("Load", function()
-    for k, v in pairs(ModernWeapons) do
-		Package.Export(k, ModernWeapons[k])
-        Package.Call(
-            "sandbox",
-            "AddSpawnMenuItem",
-            "weapons",
-			k,
-			Package.GetPath(),
-			k
-        )
-    end
+	if SpawnMenu then
+		Package.Export("ModernWeapons", ModernWeapons)
+		for k, v in pairs(ModernWeapons) do
+			SpawnMenu.AddItem(
+				"weapons",
+				k,
+				ModernWeapons[k]
+			)
+		end
+	end
 end)
