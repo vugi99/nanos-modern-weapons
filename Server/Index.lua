@@ -1328,9 +1328,10 @@ ModernWeapons = {
 	end,
 }
 
+Package.Export("ModernWeapons", ModernWeapons)
+
 Package.Subscribe("Load", function()
 	if SpawnMenu then
-		Package.Export("ModernWeapons", ModernWeapons)
 		for k, v in pairs(ModernWeapons) do
 			SpawnMenu.AddItem(
 				"weapons",
