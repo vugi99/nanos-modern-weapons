@@ -1331,7 +1331,8 @@ ModernWeapons = {
 Package.Export("ModernWeapons", ModernWeapons)
 
 Package.Subscribe("Load", function()
-	if SpawnMenu then
+	if Sandbox and Sandbox.SpawnMenu then
+		local SpawnMenu = Sandbox.SpawnMenu
 		for k, v in pairs(ModernWeapons) do
 			SpawnMenu.AddItem(
 				"weapons",

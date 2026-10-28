@@ -1,7 +1,8 @@
 
 
 function LoadWeaponsIntoSandbox()
-    if SpawnMenu then
+    if Sandbox and Sandbox.SpawnMenu then
+        local SpawnMenu = Sandbox.SpawnMenu
         SpawnMenu.AddItem("weapons", "RPK", "RPK", "assets://modern-weapons-assets/Thumbnails/SKM_Modern_Weapons_LMG_01.jpg", "rifles")
         SpawnMenu.AddItem("weapons", "M249", "M249", "assets://modern-weapons-assets/Thumbnails/SKM_Modern_Weapons_LMG_02.jpg", "rifles")
         SpawnMenu.AddItem("weapons", "M60", "M60", "assets://modern-weapons-assets/Thumbnails/SKM_Modern_Weapons_LMG_03.jpg", "rifles")
